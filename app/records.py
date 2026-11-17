@@ -24,4 +24,6 @@ def save_detail(path,result):
     return item['id']
 
 def list_receipts(path):
-    with connect(path) as db:return [json.loads(row[0]) for row in db.execute('SELECT payload FROM details ORDER BY receipt')]
+    db=connect(path)
+    try:return [json.loads(row[0]) for row in db.execute('SELECT payload FROM details ORDER BY receipt')]
+    finally:db.close()
