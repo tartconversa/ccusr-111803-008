@@ -1,0 +1,25 @@
+{
+  "title": "入境游客服务资料的多语版本采集",
+  "category": "入境服务",
+  "choice": "语言",
+  "revision": "版本",
+  "detail_label": "服务说明",
+  "entity": "商户",
+  "fact": "营业日",
+  "items": [
+    {
+      "id": "inbound-a",
+      "name": "中心店中文说明",
+      "group": "甲",
+      "detail": "服务说明甲",
+      "changed_detail": "服务说明修订甲"
+    },
+    {
+      "id": "inbound-b",
+      "name": "中心店英文说明",
+      "group": "乙",
+      "detail": "服务说明乙",
+      "changed_detail": "服务说明修订乙"
+    }
+  ]
+}
